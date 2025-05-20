@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import zipfile
 import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import cv2
 
 from sklearn.model_selection import train_test_split
@@ -110,6 +111,7 @@ os.makedirs('./checkpoints/autoencoders', exist_ok=True)
 
 # Save the model weights
 model.save_weights('./checkpoints/autoencoders/checkpoint_kaggle_80eps.weights.h5')
+model.save('./checkpoints/autoencoders/model_kaggle_80eps')
 
 # Optional: Plot training history
 plt.figure(figsize=(12, 4))

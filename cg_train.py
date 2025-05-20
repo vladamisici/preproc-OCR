@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import zipfile
 import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import cv2
 
 from sklearn.model_selection import train_test_split
@@ -98,7 +99,7 @@ model.summary()
 
 # Train the model
 BATCH_SIZE = 12
-EPOCHS = 80
+EPOCHS = 1
 
 history = model.fit(
     X_train_final, Y_train_final,
@@ -112,6 +113,7 @@ os.makedirs('./checkpoints/cyclegan', exist_ok=True)
 
 # Save the model weights
 model.save_weights('./checkpoints/cyclegan/checkpoint_kaggle_80eps.weights.h5')
+model.save('./checkpoints/cyclegan/model_kaggle_80eps')
 
 # Optional: Plot training history
 plt.figure(figsize=(12, 4))
