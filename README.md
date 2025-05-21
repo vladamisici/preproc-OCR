@@ -1,4 +1,4 @@
-# Curatare Documente
+# Preproc-OCR
 
 ## Context
 Preproc-OCR implementeaza doua metode de deep learning – denoising cu auto-encoders si CycleGAN.
