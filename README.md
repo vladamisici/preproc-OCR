@@ -4,7 +4,7 @@
 Preproc-OCR implementeaza doua metode de deep learning – denoising cu auto-encoders si CycleGAN.
 
 Lucrarea se bazeaza pe:  
-- Auto-encoder-e [[paper]](https://ieeexplore.ieee.org/document/8262546) [[code]](https://www.kaggle.com/competitions/denoising-dirty-documents/code)  
+- Auto-encoders [[paper]](https://ieeexplore.ieee.org/document/8262546) [[code]](https://www.kaggle.com/competitions/denoising-dirty-documents/code)  
 - CycleGAN [[paper]](https://arxiv.org/abs/1703.10593) [[code]](https://www.tensorflow.org/tutorials/generative/cyclegan)
 
 Dataset-ul de antrenament/testare este descarcat de pe [Kaggle – Denoising Dirty Documents](https://www.kaggle.com/competitions/denoising-dirty-documents). 
