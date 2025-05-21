@@ -99,7 +99,7 @@ model.summary()
 
 # Train the model
 BATCH_SIZE = 12
-EPOCHS = 1
+EPOCHS = 80
 
 history = model.fit(
     X_train_final, Y_train_final,
@@ -113,7 +113,7 @@ os.makedirs('./checkpoints/cyclegan', exist_ok=True)
 
 # Save the model weights
 model.save_weights('./checkpoints/cyclegan/checkpoint_kaggle_80eps.weights.h5')
-model.save('./checkpoints/cyclegan/model_kaggle_80eps')
+model.save('./checkpoints/cyclegan/model_kaggle_80eps.keras')
 
 # Optional: Plot training history
 plt.figure(figsize=(12, 4))

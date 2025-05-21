@@ -111,7 +111,7 @@ os.makedirs('./checkpoints/autoencoders', exist_ok=True)
 
 # Save the model weights
 model.save_weights('./checkpoints/autoencoders/checkpoint_kaggle_80eps.weights.h5')
-model.save('./checkpoints/autoencoders/model_kaggle_80eps')
+model.save('./checkpoints/autoencoders/model_kaggle_80eps.keras')
 
 # Optional: Plot training history
 plt.figure(figsize=(12, 4))
